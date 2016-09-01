@@ -1,7 +1,4 @@
 /**
- * http://usejsdoc.org/
- */
-/**
  * test http server listener
  */
 
@@ -22,7 +19,7 @@ mongodb_connection_string = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;
 
 
 http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+  console.log('Express server listening on ' + app.get('ip') + ' port ' + app.get('port'));
 });
 
 app.get('/', function (req, res) {
