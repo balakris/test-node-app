@@ -9,5 +9,6 @@
     "express": "3.2.6",
     "jade": "*",
     "npm": "*"
-  }
+  },
+  "main": "server.js"
 }
